@@ -1,0 +1,56 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+
+Style/Documentation:
+  Exclude:
+    - 'config/application.rb'
+    - 'app/controllers/application_controller.rb'
+    - 'app/helpers/application_helper.rb'
+    - 'test/test_helper.rb'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Metrics/ClassLength:
+  Max: 500
+
+Metrics/ModuleLength:
+  Max: 500
+
+Metrics/LineLength:
+  Exclude:
+    - 'config/environments/development.rb'
+    - 'config/environments/production.rb'
+    - 'config/environments/test.rb'
+    - 'config/initializers/assets.rb'
+    - 'config/initializers/backtrace_silencers.rb'
+    - 'config/initializers/cookies_serializer.rb'
+    - 'config/initializers/wrap_parameters.rb'
+
+Metrics/MethodLength:
+  Max: 50
+
+Metrics/AbcSize:
+  Max: 20
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  Exclude:
+    - 'db/schema.rb'
+
+Style/EmptyLinesAroundBlockBody:
+  Exclude:
+    - 'db/schema.rb'
+
+Metrics/LineLength:
+  Max: 120
+  Exclude:
+    - 'db/schema.rb'
+
+Style/NumericLiterals:
+  Exclude:
+    - 'db/schema.rb'
